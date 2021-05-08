@@ -63,7 +63,7 @@ export default function Home() {
         <nav className="nav bd-grid">
           <div>
             <a href="#home" className="nav__logo">
-              Kartikey
+              Kartikey Pandey
             </a>
           </div>
 
