@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import "../../styles/portfolio.css";
 import mypic from "../../images/mypic6.png";
+import mypic2 from "../../images/myimg.png";
 import aboutpic from "../../images/mypic2.png";
 import pic7 from "../../images/pic7.jpg";
 import pic1 from "../../images/pic1.jpg";
@@ -143,7 +144,7 @@ export default function Home() {
           </div>
 
           <div className="home__img">
-            <img alt="" src={mypic} />
+            <img alt="" src={mypic2} />
           </div>
         </section>
         <section className="about section" id="about">

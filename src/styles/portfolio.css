@@ -6,8 +6,8 @@
 }
 
 :root {
-  --first-color: #4070f4;
-  --second-color: #0e2431;
+  --first-color: #f87b33;
+  --second-color: #30190e;
 }
 
 :root {
@@ -435,7 +435,7 @@ img {
   }
   .home__img {
     width: 457px;
-    bottom: 15%;
+    bottom: 30%;
   }
 
   .about__container,
