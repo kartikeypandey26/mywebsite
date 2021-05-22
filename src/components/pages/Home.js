@@ -177,7 +177,7 @@ export default function Home() {
           <h2 className="section-title">Skills</h2>
 
           <div className="skills__container bd-grid">
-            <div>
+            <div className="skills__right">
               <h2 className="skills__subtitle">Professional Skills</h2>
               <p className="skills__text">
                 A good hold in programming languages like JavaScript, C, C++ and
@@ -185,56 +185,57 @@ export default function Home() {
                 and React Native, Material UI, Redux, OOP concepts and have
                 strong Problem Solving skills and Management skills.
               </p>
+              <img alt="" src={pic7} className="skills__img" />
+            </div>
+            <div>
+              <div className="skills__data">
+                <div className="skills__names">
+                  <i class="bx bxl-react skills__icon"></i>
+                  <span className="skill__name">React JS</span>
+                </div>
+
+                <div className="skills__bar skills__react"></div>
+              </div>
 
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-html5  skills__icon"></i>
-                  <span className="skill__name">HTML5</span>
+                  <i class="bx bxl-react skills__icon"></i>
+                  <span className="skill__name">React Native</span>
                 </div>
-                <div>
-                  <span className="skills__percentage">95%</span>
+                <div className="skills__bar skills__react"></div>
+              </div>
+              <div className="skills__data">
+                <div className="skills__names">
+                  <i class="bx bxl-javascript  skills__icon"></i>
+                  <span className="skill__name">Javascript</span>
                 </div>
 
-                <div className="skills__bar skills__html"></div>
+                <div className="skills__bar skills__js"></div>
               </div>
               <div className="skills__data">
                 <div className="skills__names">
                   <i class="bx bxl-css3  skills__icon"></i>
                   <span className="skill__name">CSS3</span>
                 </div>
-                <div>
-                  <span className="skills__percentage">80%</span>
-                </div>
 
                 <div className="skills__bar skills__css"></div>
               </div>
-
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-javascript  skills__icon"></i>
-                  <span className="skill__name">JAVASCRIPT</span>
-                </div>
-                <div>
-                  <span className="skills__percentage">70%</span>
+                  <i class="bx bxl-html5  skills__icon"></i>
+                  <span className="skill__name">HTML5</span>
                 </div>
 
-                <div className="skills__bar skills__js"></div>
+                <div className="skills__bar skills__html"></div>
               </div>
-
-              <div className="skills__data">
-                <div className="skills__names">
-                  <i class="bx bxl-react skills__icon"></i>
-                  <span className="skill__name">React</span>
-                </div>
-                <div>
-                  <span className="skills__percentage">85%</span>
-                </div>
-
-                <div className="skills__bar skills__react"></div>
-              </div>
-            </div>
-            <div>
-              <img alt="" src={pic7} className="skills__img" />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1CF2617QcWlCKeaP9qbMiSIi03Mq3aZ5u/view?usp=sharing"
+                className="button"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         </section>
@@ -242,24 +243,119 @@ export default function Home() {
         <section className="work section" id="work">
           <h2 className="section-title">Work</h2>
 
-          <div className="work__container bd-grid">
-            <div className="work__img">
-              <img alt="" src={pic1} />
+          <div className="intern__container bd-grid">
+            <div>
+              <h2 className="skills__subtitle">Internship Experience</h2>
+              <p className="skills__text">
+                I gained proficiency in CSS, JavaScript, React Native, and React
+                concepts with their practical implementations on company's live
+                projects. I learnt how APIs are used to fetch, put and update
+                data on databases and how to make applications responsive,
+                good-looking, interactive and also to implement dynamic contents
+                in the applications.
+              </p>
             </div>
-            <div className="work__img">
-              <img alt="" src={pic2} />
+
+            <div className="intern__data bd-grid">
+              <div className="intern__item">
+                <h3>1. Healimpilo, Bangalore, India</h3>
+                <p className="text-bold">(Software Engineer Intern)</p>
+                <p className="text-bold skills__text">Duration: 6 months</p>
+                <p className="skills__text">
+                  I thank Healimpilo family for providing me the Industrial
+                  experience on software development where I worked as a
+                  frontend developer to build a full fledged Mobile and Web
+                  Application specifically on React JS and React Native.
+                </p>
+
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/10eIg5rD-q0A-QUbjF3V2WnAWo2FurDnd/view?usp=sharing"
+                  className="button skills__text"
+                >
+                  Certificate
+                </a>
+              </div>
+
+              <div className="intern__item">
+                <h3>2. ApplicateAI, Gurugram, India</h3>
+                <p className="text-bold">(Software Engineer Intern)</p>
+                <p className="text-bold skills__text">Duration: 3 months</p>
+                <p className="skills__text">
+                  Thanks to ApplicateAI for guiding me throughout with regular
+                  feedbacks which helped me to improve some bad coding
+                  practices. I worked in frontend developers team where I gained
+                  proficiency on JavaScript, jQuery, and handlebars.
+                </p>
+
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1a9z-KxzbfttpyxNCkx1BIhQC0afHmf05/view?usp=sharing"
+                  className="button skills__text"
+                >
+                  Certificate
+                </a>
+              </div>
             </div>
-            <div className="work__img">
-              <img alt="" src={pic3} />
+          </div>
+          <div className="project__container bd-grid">
+            <div>
+              <h2 className="skills__subtitle">Projects</h2>
+              <p className="skills__text">
+                Project means applying your technical knowledge in shaping a
+                real-life object. The skills learnt during their 4 years of
+                engineering life, will be applied in development of any
+                real-life object. Every branch student needs to make a project
+                that helps not only in making a resume attractive, but gives
+                them an experience of working on skills and technology.
+                Sometimes to develop a project one needs to work in a group, so
+                that also increases team management skills, communication
+                skills, and time management skills. The project a skilled
+                engineer might be working on, however, won’t be successful
+                unless there is an equally skilled project manager involved
+                leading and managing the engineering project.
+              </p>
             </div>
-            <div className="work__img">
-              <img alt="" src={pic4} />
-            </div>
-            <div className="work__img">
-              <img alt="" src={pic5} />
-            </div>
-            <div className="work__img">
-              <img alt="" src={pic6} />
+            <div className="work__container bd-grid">
+              {/* <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <div className="front-inner">
+                      <div>
+                        <img alt="" className="opacity-light" src={pic1} />
+                        <div className="pic-overlay"></div>
+                      </div>
+                      <h3 className="front-title">Pathshala</h3>
+                    </div>
+                  </div>
+                  <div className="flip-card-back">
+                    <h1>Pathshala</h1>
+                    <p>Mobile Application</p>
+                    <p>Online Teaching Learning</p>
+                  </div>
+                </div>
+              </div> */}
+
+              <div className="work__img">
+                <img alt="" src={pic1} />
+              </div>
+              <div className="work__img">
+                <img alt="" src={pic2} />
+              </div>
+              <div className="work__img">
+                <img alt="" src={pic3} />
+              </div>
+              <div className="work__img">
+                <img alt="" src={pic4} />
+              </div>
+              <div className="work__img">
+                <img alt="" src={pic5} />
+              </div>
+              <div className="work__img">
+                <img alt="" src={pic6} />
+              </div>
             </div>
           </div>
         </section>

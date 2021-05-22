@@ -14,6 +14,7 @@
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
+  --h3-font-size: 1.1rem;
   --normal-font-size: 0.938rem;
 }
 
@@ -21,6 +22,8 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
+
+    --h3-font-size: 1.5rem;
     --normal-font-size: 1rem;
   }
 }
@@ -60,6 +63,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -110,7 +114,7 @@ img {
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 2rem;
+  grid-column-gap: 2.5rem;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -285,6 +289,11 @@ img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
+.skills__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
@@ -307,19 +316,20 @@ img {
 }
 
 .skills__html {
-  width: 95%;
+  width: 100%;
 }
 .skills__css {
-  width: 80%;
+  width: 100%;
 }
 .skills__js {
-  width: 70%;
+  width: 100%;
 }
 .skills__react {
-  width: 85%;
+  width: 100%;
 }
 .skills__img {
   border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 .work {
   text-align: center;
@@ -452,6 +462,22 @@ img {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
+
+  .intern__data {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 2rem;
+  }
+
+  .intern__item {
+    position: relative;
+    padding: 2rem 2rem 0.5rem 2rem;
+    margin-bottom: var(--mb-4);
+    border-radius: 0.5rem;
+
+    border-bottom: 0.25rem solid var(--first-color);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  }
   .contact__from {
     width: 360px;
   }
@@ -518,8 +544,17 @@ img {
 .l-main {
   cursor: none;
 }
-/* custom animations starts*/
+.skills-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-bold {
+  font-weight: bold;
+}
 
+/* custom animations starts*/
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -568,3 +603,75 @@ img {
   }
 }
 /* custom animations ends*/
+
+/* Projects cards */
+.flip-card {
+  background-color: transparent;
+  cursor: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  z-index: 4;
+  transform: rotateY(180deg);
+}
+
+.front-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.front-title {
+  color: #fff;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.opacity-light {
+  opacity: 0.4;
+}
+.pic-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(150, 35, 0, 0.5);
+  z-index: 2;
+}
+/* project cards end */
