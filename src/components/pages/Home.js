@@ -1,16 +1,17 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import "../../styles/portfolio.css";
-// import mypic from "../../images/mypic6.png";
-import mypic2 from "../../images/myimg.png";
-import aboutpic from "../../images/mypic2.png";
-import pic7 from "../../images/pic7.jpg";
-import pic1 from "../../images/pic1.jpg";
-import pic2 from "../../images/pic2.jpg";
-import pic3 from "../../images/pic3.jpg";
-import pic4 from "../../images/pic4.jpg";
-import pic5 from "../../images/pic5.jpg";
-import pic6 from "../../images/pic6.jpg";
+import Particles from "react-particles-js";
+import myParticlesConfig from "../../assets/Particles";
+import mypic2 from "../../assets/images/myimg.png";
+import aboutpic from "../../assets/images/mypic2.png";
+import pic7 from "../../assets/images/pic7.jpg";
+import pic1 from "../../assets/images/pic1.jpg";
+import pic2 from "../../assets/images/pic2.jpg";
+import pic3 from "../../assets/images/pic3.jpg";
+import pic4 from "../../assets/images/pic4.jpg";
+import pic5 from "../../assets/images/pic5.jpg";
+import pic6 from "../../assets/images/pic6.jpg";
 
 export default function Home() {
   useEffect(() => {
@@ -314,6 +315,7 @@ export default function Home() {
         </div>
         <p>&#169; 2021 copyright all right reserved</p>
       </footer>
+      <Particles className="my-particles" params={myParticlesConfig} />
     </div>
   );
 }
