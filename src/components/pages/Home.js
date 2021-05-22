@@ -281,7 +281,7 @@ export default function Home() {
               <div className="intern__item">
                 <h3>2. ApplicateAI, Gurugram, India</h3>
                 <p className="text-bold">(Software Engineer Intern)</p>
-                <p className="text-bold skills__text">Duration: 3 months</p>
+                <p className="text-bold skills__text ">Duration: 3 months</p>
                 <p className="skills__text">
                   Thanks to ApplicateAI for guiding me throughout with regular
                   feedbacks which helped me to improve some bad coding
@@ -319,42 +319,43 @@ export default function Home() {
               </p>
             </div>
             <div className="work__container bd-grid">
-              {/* <div className="flip-card">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <div className="front-inner">
-                      <div>
-                        <img alt="" className="opacity-light" src={pic1} />
-                        <div className="pic-overlay"></div>
-                      </div>
-                      <h3 className="front-title">Pathshala</h3>
-                    </div>
-                  </div>
-                  <div className="flip-card-back">
-                    <h1>Pathshala</h1>
-                    <p>Mobile Application</p>
-                    <p>Online Teaching Learning</p>
-                  </div>
-                </div>
-              </div> */}
+              <div className="work__img">
+                <div className="work__item"></div>
+                <h1>Pathshala App</h1>
+                <img alt="Pathshala App" src={pic1} />
+              </div>
 
               <div className="work__img">
-                <img alt="" src={pic1} />
+                <div className="work__item"></div>
+                <h1>:breakers Website</h1>
+                <img alt="Colonbreakers" src={pic2} />
               </div>
+
               <div className="work__img">
-                <img alt="" src={pic2} />
+                <div className="work__item"></div>
+                <h1>SSIPMT Notes App</h1>
+                <img alt="notes-app" src={pic3} />
               </div>
+
               <div className="work__img">
-                <img alt="" src={pic3} />
+                <div className="work__item"></div>
+                <h1>NSS Cell Website</h1>
+                <img alt="nss-web" src={pic4} />
               </div>
+
               <div className="work__img">
-                <img alt="" src={pic4} />
+                <div className="work__item"></div>
+                <h1>
+                  MG Automation
+                  <br /> Website
+                </h1>
+                <img alt="mgautomation" src={pic5} />
               </div>
+
               <div className="work__img">
-                <img alt="" src={pic5} />
-              </div>
-              <div className="work__img">
-                <img alt="" src={pic6} />
+                <div className="work__item"></div>
+                <h1>GoRentz App</h1>
+                <img alt="gorentz-app" src={pic6} />
               </div>
             </div>
           </div>
