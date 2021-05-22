@@ -435,7 +435,7 @@ img {
   }
   .home__img {
     width: 457px;
-    bottom: 30%;
+    bottom: 25%;
   }
 
   .about__container,
@@ -477,4 +477,27 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 !important;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -25px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.home__img {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
 }
