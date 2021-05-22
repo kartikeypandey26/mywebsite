@@ -3,6 +3,7 @@ import ScrollReveal from "scrollreveal";
 import "../../styles/portfolio.css";
 import Particles from "react-particles-js";
 import myParticlesConfig from "../../assets/Particles";
+import myCursor from "../../assets/cursor";
 import mypic2 from "../../assets/images/myimg.png";
 import aboutpic from "../../assets/images/mypic2.png";
 import pic7 from "../../assets/images/pic7.jpg";
@@ -15,6 +16,7 @@ import pic6 from "../../assets/images/pic6.jpg";
 
 export default function Home() {
   useEffect(() => {
+    myCursor();
     let navL = document.querySelectorAll(".nav__link");
     navL.forEach((n) => n.addEventListener("click", linkAction));
     console.log(process.env.REACT_APP_HOME_PAGE);
@@ -61,6 +63,7 @@ export default function Home() {
 
   return (
     <div>
+      <div className="cursor"></div>
       <header className="l-header">
         <nav className="nav bd-grid">
           <div>
