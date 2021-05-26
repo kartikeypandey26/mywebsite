@@ -13,6 +13,11 @@ import pic3 from "../../assets/images/pic3.jpg";
 import pic4 from "../../assets/images/pic4.jpg";
 import pic5 from "../../assets/images/pic5.jpg";
 import pic6 from "../../assets/images/pic6.jpg";
+import tek from "../../assets/images/tek.png";
+import gitCourse from "../../assets/images/git.png";
+import jsCourse from "../../assets/images/jscourse.png";
+import mjsCourse from "../../assets/images/mjscourse.png";
+import music from "../../assets/images/music.png";
 
 export default function Home() {
   useEffect(() => {
@@ -169,6 +174,14 @@ export default function Home() {
                 professional development and contribute towards the prosperity
                 of the organization.
               </p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1CF2617QcWlCKeaP9qbMiSIi03Mq3aZ5u/view?usp=sharing"
+                className="button"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         </section>
@@ -228,14 +241,6 @@ export default function Home() {
 
                 <div className="skills__bar skills__html"></div>
               </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1CF2617QcWlCKeaP9qbMiSIi03Mq3aZ5u/view?usp=sharing"
-                className="button"
-              >
-                Download Resume
-              </a>
             </div>
           </div>
         </section>
@@ -248,11 +253,12 @@ export default function Home() {
               <h2 className="skills__subtitle">Internship Experience</h2>
               <p className="skills__text">
                 I gained proficiency in CSS, JavaScript, React Native, and React
-                concepts with their practical implementations on company's live
-                projects. I learnt how APIs are used to fetch, put and update
-                data on databases and how to make applications responsive,
-                good-looking, interactive and also to implement dynamic contents
-                in the applications.
+                concepts through their practical implementations in company's
+                live projects. I learnt how APIs are used to fetch, put and
+                update data on databases, and implementing dynamic contents in
+                the application. Furthermore in adding the final touch comprises
+                of making the application responsive, attractive, and
+                interactive.
               </p>
             </div>
 
@@ -262,10 +268,10 @@ export default function Home() {
                 <p className="text-bold">(Software Engineer Intern)</p>
                 <p className="text-bold skills__text">Duration: 6 months</p>
                 <p className="skills__text">
-                  I thank Healimpilo family for providing me the Industrial
-                  experience on software development where I worked as a
-                  frontend developer to build a full fledged Mobile and Web
-                  Application specifically on React JS and React Native.
+                  My utmost regards to Healimpilo family which helped me in
+                  gaining the Industrial exposure as a software developer where
+                  I worked in the frontend part to build a full fledged Mobile
+                  and Web Application.
                 </p>
 
                 <a
@@ -283,10 +289,10 @@ export default function Home() {
                 <p className="text-bold">(Software Engineer Intern)</p>
                 <p className="text-bold skills__text ">Duration: 3 months</p>
                 <p className="skills__text">
-                  Thanks to ApplicateAI for guiding me throughout with regular
-                  feedbacks which helped me to improve some bad coding
-                  practices. I worked in frontend developers team where I gained
-                  proficiency on JavaScript, jQuery, and handlebars.
+                  Thanks to ApplicateAI for letting me work with the front-end
+                  team and guiding me throughout my work duration with regular
+                  feedbacks in result helping me in improving the coding
+                  practices.
                 </p>
 
                 <a
@@ -356,6 +362,82 @@ export default function Home() {
                 <div className="work__item"></div>
                 <h1>GoRentz App</h1>
                 <img alt="gorentz-app" src={pic6} />
+              </div>
+            </div>
+          </div>
+
+          <div className="certificate__container bd-grid">
+            <div>
+              <h2 className="skills__subtitle sub-title">Certifications</h2>
+            </div>
+            <div className="work__container bd-grid">
+              <div className="work__img">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1SsLmQ6ATJ_BGRESlcReta2CgKRQg-5id/view?usp=sharing"
+                >
+                  <div className="work__item"></div>
+                  <h1>
+                    Mentorship by <br />
+                    Teksystems
+                  </h1>
+                  <img alt="Mentorship" src={tek} />
+                </a>
+              </div>
+
+              <div className="work__img">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.coursera.org/account/accomplishments/certificate/DNMH7C4ZUBBC"
+                >
+                  <div className="work__item"></div>
+                  <h1>Git and GitHub</h1>
+                  <img alt="git" src={gitCourse} />
+                </a>
+              </div>
+
+              <div className="work__img">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.coursera.org/account/accomplishments/certificate/7FZZ63EKWPMF"
+                >
+                  <div className="work__item"></div>
+                  <h1>
+                    Javascript jQuey <br />
+                    and JSON
+                  </h1>
+                  <img alt="js-course" src={jsCourse} />
+                </a>
+              </div>
+
+              <div className="work__img">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.udemy.com/certificate/UC-84NWOTZH/"
+                >
+                  <div className="work__item"></div>
+                  <h1>Modern JavaScript</h1>
+                  <img alt="mjs-course" src={mjsCourse} />
+                </a>
+              </div>
+
+              <div className="work__img">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.coursera.org/account/accomplishments/certificate/3LVJVPQ6DZGV"
+                >
+                  <div className="work__item"></div>
+                  <h1>
+                    Developing your
+                    <br /> Musicianship
+                  </h1>
+                  <img alt="music" src={music} />
+                </a>
               </div>
             </div>
           </div>
