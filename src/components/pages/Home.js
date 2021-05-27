@@ -18,6 +18,11 @@ import gitCourse from "../../assets/images/git.png";
 import jsCourse from "../../assets/images/jscourse.png";
 import mjsCourse from "../../assets/images/mjscourse.png";
 import music from "../../assets/images/music.png";
+import karate from "../../assets/images/Karate.png";
+import band from "../../assets/images/band.png";
+import yoga from "../../assets/images/yoga.png";
+import code from "../../assets/images/code.png";
+import model from "../../assets/images/model.png";
 
 export default function Home() {
   useEffect(() => {
@@ -100,6 +105,21 @@ export default function Home() {
                 </a>
               </li>
               <li className="nav__item">
+                <a href="#certifications" className="nav__link">
+                  Certifications
+                </a>
+              </li>
+              <li className="nav__item">
+                <a href="#blogs" className="nav__link">
+                  Blog
+                </a>
+              </li>
+              <li className="nav__item">
+                <a href="#interests" className="nav__link">
+                  Interests
+                </a>
+              </li>
+              <li className="nav__item">
                 <a href="#contact" className="nav__link">
                   Contact
                 </a>
@@ -113,7 +133,7 @@ export default function Home() {
               showMenu("nav-toggle", "nav-menu");
             }}
           >
-            <i class="bx bx-menu-alt-left"></i>
+            <i className="bx bx-menu-alt-left"></i>
           </div>
         </nav>
       </header>
@@ -136,19 +156,19 @@ export default function Home() {
               href="https://www.linkedin.com/in/kartikey-pandey-2603/"
               className="home__social-icon"
             >
-              <i class="bx bxl-linkedin"></i>
+              <i className="bx bxl-linkedin"></i>
             </a>
             <a
               href="https://github.com/kartikeypandey26"
               className="home__social-icon"
             >
-              <i class="bx bxl-github"></i>
+              <i className="bx bxl-github"></i>
             </a>
             <a
               href="https://www.instagram.com/kartik_2603/"
               className="home__social-icon"
             >
-              <i class="bx bxl-instagram"></i>
+              <i className="bx bxl-instagram"></i>
             </a>
           </div>
 
@@ -203,7 +223,7 @@ export default function Home() {
             <div>
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-react skills__icon"></i>
+                  <i className="bx bxl-react skills__icon"></i>
                   <span className="skill__name">React JS</span>
                 </div>
 
@@ -212,14 +232,14 @@ export default function Home() {
 
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-react skills__icon"></i>
+                  <i className="bx bxl-react skills__icon"></i>
                   <span className="skill__name">React Native</span>
                 </div>
                 <div className="skills__bar skills__react"></div>
               </div>
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-javascript  skills__icon"></i>
+                  <i className="bx bxl-javascript  skills__icon"></i>
                   <span className="skill__name">Javascript</span>
                 </div>
 
@@ -227,7 +247,7 @@ export default function Home() {
               </div>
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-css3  skills__icon"></i>
+                  <i className="bx bxl-css3  skills__icon"></i>
                   <span className="skill__name">CSS3</span>
                 </div>
 
@@ -235,7 +255,7 @@ export default function Home() {
               </div>
               <div className="skills__data">
                 <div className="skills__names">
-                  <i class="bx bxl-html5  skills__icon"></i>
+                  <i className="bx bxl-html5  skills__icon"></i>
                   <span className="skill__name">HTML5</span>
                 </div>
 
@@ -268,10 +288,10 @@ export default function Home() {
                 <p className="text-bold">(Software Engineer Intern)</p>
                 <p className="text-bold skills__text">Duration: 6 months</p>
                 <p className="skills__text">
-                  My utmost regards to Healimpilo family which helped me in
-                  gaining the Industrial exposure as a software developer where
-                  I worked in the frontend part to build a full fledged Mobile
-                  and Web Application.
+                  My utmost regards to Healimpilo family which helped me to gain
+                  the Industrial exposure as a software developer where I worked
+                  in the frontend part to build a full fledged Mobile and Web
+                  Application
                 </p>
 
                 <a
@@ -292,7 +312,7 @@ export default function Home() {
                   Thanks to ApplicateAI for letting me work with the front-end
                   team and guiding me throughout my work duration with regular
                   feedbacks in result helping me in improving the coding
-                  practices.
+                  practices
                 </p>
 
                 <a
@@ -326,36 +346,54 @@ export default function Home() {
             </div>
             <div className="work__container bd-grid">
               <div className="work__img">
-                <div className="work__item"></div>
-                <h1>Pathshala App</h1>
-                <img alt="Pathshala App" src={pic1} />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://play.google.com/store/apps/details?id=com.pathshala.Pathshala"
+                >
+                  <div className="work__item"></div>
+                  <h1>Pathshala App</h1>
+                  <img alt="Pathshala App" src={pic1} />
+                </a>
               </div>
 
               <div className="work__img">
-                <div className="work__item"></div>
-                <h1>:breakers Website</h1>
-                <img alt="Colonbreakers" src={pic2} />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ssipmt.com/colonbreakers/"
+                >
+                  <div className="work__item"></div>
+                  <h1>:breakers Website</h1>
+                  <img alt="Colonbreakers" src={pic2} />
+                </a>
               </div>
 
               <div className="work__img">
-                <div className="work__item"></div>
-                <h1>SSIPMT Notes App</h1>
-                <img alt="notes-app" src={pic3} />
+                <a href="https://play.google.com/store/apps/details?id=com.pathshala.SSIPMT_NOTES">
+                  <div className="work__item"></div>
+                  <h1>SSIPMT Notes App</h1>
+                  <img alt="notes-app" src={pic3} />
+                </a>
               </div>
 
               <div className="work__img">
-                <div className="work__item"></div>
-                <h1>NSS Cell Website</h1>
-                <img alt="nss-web" src={pic4} />
+                <a href="https://myfirstliveproject.000webhostapp.com/NSS%20Website/home.php">
+                  <div className="work__item"></div>
+                  <h1>NSS Cell Website</h1>
+                  <img alt="nss-web" src={pic4} />
+                </a>
               </div>
 
               <div className="work__img">
-                <div className="work__item"></div>
-                <h1>
-                  MG Automation
-                  <br /> Website
-                </h1>
-                <img alt="mgautomation" src={pic5} />
+                <a href="https://www.mgautomations.com/">
+                  <div className="work__item"></div>
+                  <h1>
+                    MG Automation
+                    <br /> Website
+                  </h1>
+                  <img alt="mgautomation" src={pic5} />
+                </a>
               </div>
 
               <div className="work__img">
@@ -365,11 +403,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
 
+        <section className="certifications section" id="certifications">
+          <h2 className="section-title">Certifications</h2>
           <div className="certificate__container bd-grid">
-            <div>
-              <h2 className="skills__subtitle sub-title">Certifications</h2>
-            </div>
             <div className="work__container bd-grid">
               <div className="work__img">
                 <a
@@ -443,10 +481,125 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="blogs section" id="blogs">
+          <h2 className="section-title">Blogs</h2>
+          <div className="blog__data bd-grid">
+            <div className="blog__item">
+              <h3>1. Fetching & Showing data from API in React</h3>
+              <p className="text-bold">(Article on Medium)</p>
+              <p className="text-bold skills__text">3 min read</p>
+              <p className="skills__text">
+                In this article, we are going to see how to fetch data from an
+                API and show it on the front-end using React JS.
+              </p>
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://kartikeypandey619.medium.com/fetching-showing-data-from-api-in-react-js-3faec2f61a0e"
+                className="button skills__text"
+              >
+                Read
+              </a>
+            </div>
+
+            <div className="blog__item">
+              <h3>Coming soon</h3>
+            </div>
+            <div className="blog__item">
+              <h3>Coming soon</h3>
+            </div>
+          </div>
+        </section>
+
+        <section className="interests section" id="interests">
+          <h2 className="section-title">Achievements & Interests</h2>
+
+          <div className="work__container bd-grid">
+            <div className="work__img">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1NDFRTCleKfd6PJxd7gnaXgWh_Mje0wyB/view?usp=sharing"
+              >
+                <div className="work__item"></div>
+                <h1>Brown Belt - Karate</h1>
+                <img alt="Brown belt" src={karate} />
+              </a>
+            </div>
+
+            <div className="work__img">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1XIfK09mEPsX4wM_JhZ0kAVPKhrJ56OdK/view?usp=sharing"
+              >
+                <div className="work__item"></div>
+                <h1>
+                  Runner-up
+                  <br /> War of Bands
+                  <br /> by NIT Raipur
+                </h1>
+                <img alt="band" src={band} />
+              </a>
+            </div>
+
+            <div className="work__img">
+              <a href="https://drive.google.com/file/d/1VRMBfNF5EhZsa-EvxKeqJMsTkIFQvLDh/view?usp=sharing">
+                <div className="work__item"></div>
+                <h1>Krack D Code 2.0</h1>
+                <img alt="code" src={code} />
+              </a>
+            </div>
+
+            <div className="work__img">
+              <a href="https://drive.google.com/file/d/1gmZP-PpcFLqZlsyrQLS25GxwsRaJ2XsB/view?usp=sharing">
+                <div className="work__item"></div>
+                <h1>
+                  Runner-up <br />
+                  Model Making
+                  <br /> by SSIPMT Raipur
+                </h1>
+                <img alt="model" src={model} />
+              </a>
+            </div>
+
+            <div className="work__img">
+              <a href="https://drive.google.com/file/d/1JAHuXvh_hO0a24-j66b2BQhVsQG_Gq3W/view?usp=sharing">
+                <div className="work__item"></div>
+                <h1>
+                  Winner <br /> Yoga Competition <br /> by SSIPMT Raipur
+                </h1>
+                <img alt="yoga" src={yoga} />
+              </a>
+            </div>
+          </div>
+          <div className="bd-grid">
+            <div className="centered-text">
+              <h1>Hobbies</h1>
+              <p className="skills__text">
+                My hobbies are programming and playing Piano. Here is my Youtube
+                Channel
+              </p>
+            </div>
+            <div className="work">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/V0GGgOVZtMQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
         <section className="'contact section" id="contact">
           <h2 className="section-title">Contact</h2>
 
-          <div class="contact__container bd-grid">
+          <div className="contact__container bd-grid">
             <form action="" className="conatct__form">
               <input
                 type="text"
@@ -480,19 +633,19 @@ export default function Home() {
 
         <div className="footer__social">
           <a href="https://twitter.com/kartikey2603" className="footer__icon">
-            <i class="bx bxl-twitter"></i>
+            <i className="bx bxl-twitter"></i>
           </a>
           <a
             href="https://www.instagram.com/kartik_2603"
             className="footer__icon"
           >
-            <i class="bx bxl-instagram"></i>
+            <i className="bx bxl-instagram"></i>
           </a>
           <a
             href="https://www.facebook.com/kartikey.pandey.3939/"
             className="footer__icon"
           >
-            <i class="bx bxl-facebook-circle"></i>
+            <i className="bx bxl-facebook-circle"></i>
           </a>
         </div>
         <p>&#169; 2021 copyright all right reserved</p>
