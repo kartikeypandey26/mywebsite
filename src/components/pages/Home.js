@@ -530,7 +530,7 @@ export default function Home() {
                   Research entitled
                   <br />
                   <span className="bold">
-                    Gorentz App - A result of Study on Renting vs buying
+                    Gorentz App - Result of Study on Renting vs buying
                   </span>
                 </p>
                 <a
