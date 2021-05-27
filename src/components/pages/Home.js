@@ -23,6 +23,7 @@ import band from "../../assets/images/band.png";
 import yoga from "../../assets/images/yoga.png";
 import code from "../../assets/images/code.png";
 import model from "../../assets/images/model.png";
+import paper from "../../assets/images/mypaper.png";
 
 export default function Home() {
   useEffect(() => {
@@ -504,10 +505,43 @@ export default function Home() {
             </div>
 
             <div className="blog__item">
-              <h3>Coming soon</h3>
+              <h3 className="centered-text ">2. Coming soon</h3>
             </div>
             <div className="blog__item">
-              <h3>Coming soon</h3>
+              <h3 className="centered-text ">3. Coming soon</h3>
+            </div>
+          </div>
+
+          <div className=" bd-grid ">
+            <h2 className="skills__subtitle">Research Papers</h2>
+            <div className="paper__data bd-grid ">
+              <div className="blog__item ">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1C2Gz1b0pSWQtBpNYNY3ImQeUDpC5nv3f/view?usp=sharing"
+                  className="paper-link"
+                >
+                  <img src={paper} alt="paper" className="paper-img" />
+                </a>
+
+                <p className="paper-text ">
+                  My Academic Research paper is published on Wesleyan Journal of
+                  Research entitled
+                  <br />
+                  <span className="bold">
+                    Gorentz App - A result of Study on Renting vs buying
+                  </span>
+                </p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1C2Gz1b0pSWQtBpNYNY3ImQeUDpC5nv3f/view?usp=sharing"
+                  className="button skills__text"
+                >
+                  Read
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -576,21 +610,20 @@ export default function Home() {
           </div>
           <div className="bd-grid">
             <div className="centered-text">
-              <h1>Hobbies</h1>
+              <h1 className="sub-title">Hobbies</h1>
               <p className="skills__text">
                 My hobbies are programming and playing Piano. Here is my Youtube
                 Channel
               </p>
             </div>
-            <div className="work">
+            <div className="centered-text">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/V0GGgOVZtMQ"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                className="yt-video"
               ></iframe>
             </div>
           </div>

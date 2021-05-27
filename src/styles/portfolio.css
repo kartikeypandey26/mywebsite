@@ -26,6 +26,11 @@
     --h3-font-size: 1.5rem;
     --normal-font-size: 1rem;
   }
+
+  .yt-video {
+    width: 80%;
+    height: 560px;
+  }
 }
 
 :root {
@@ -149,6 +154,11 @@ img {
     padding: 2rem;
     background-color: var(--second-color);
     transition: 0.5s;
+  }
+
+  .yt-video {
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -279,7 +289,12 @@ img {
 .skills__text {
   margin-bottom: var(--mb-4);
 }
-
+.paper-text {
+  margin: 2rem 0;
+}
+.bold {
+  font-weight: bold;
+}
 .skills__data {
   display: flex;
   justify-content: space-between;
@@ -522,6 +537,22 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     column-gap: 2rem;
+  }
+  .paper__data {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 2rem;
+  }
+  .paper-img {
+    z-index: -1;
+    height: 22rem;
+    cursor: pointer;
+    width: 32rem;
+    margin: auto;
+  }
+
+  .paper-link {
+    cursor: pointer;
   }
   .contact__from {
     width: 360px;
