@@ -24,6 +24,8 @@ import yoga from "../../assets/images/yoga.png";
 import code from "../../assets/images/code.png";
 import model from "../../assets/images/model.png";
 import paper from "../../assets/images/mypaper.png";
+import ADAc from "../../assets/images/ADAc.png";
+import IITB from "../../assets/images/IITBand.png";
 
 export default function Home() {
   useEffect(() => {
@@ -148,7 +150,7 @@ export default function Home() {
               <br />
               Front End Developer
             </h1>
-            <a href="#contact" className="button">
+            <a href="#contact" className="button btn-grad">
               Contact
             </a>
           </div>
@@ -199,7 +201,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://drive.google.com/file/d/1CF2617QcWlCKeaP9qbMiSIi03Mq3aZ5u/view?usp=sharing"
-                className="button"
+                className="button btn-grad"
               >
                 Download Resume
               </a>
@@ -289,7 +291,7 @@ export default function Home() {
                 <p className="text-bold">(Software Engineer Intern)</p>
                 <p className="text-bold skills__text">Duration: 6 months</p>
                 <p className="skills__text">
-                  My utmost regards to Healimpilo family which helped me to gain
+                  I extend regards to Healimpilo family which helped me to gain
                   the Industrial exposure as a software developer where I worked
                   in the frontend part to build a full fledged Mobile and Web
                   Application
@@ -299,7 +301,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://drive.google.com/file/d/10eIg5rD-q0A-QUbjF3V2WnAWo2FurDnd/view?usp=sharing"
-                  className="button skills__text"
+                  className="button skills__text btn-grad"
                 >
                   Certificate
                 </a>
@@ -320,7 +322,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://drive.google.com/file/d/1a9z-KxzbfttpyxNCkx1BIhQC0afHmf05/view?usp=sharing"
-                  className="button skills__text"
+                  className="button skills__text btn-grad"
                 >
                   Certificate
                 </a>
@@ -463,7 +465,21 @@ export default function Home() {
                   <img alt="mjs-course" src={mjsCourse} />
                 </a>
               </div>
-
+              <div className="work__img">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1MzRc9nxmWh5UiTLpW5TmzfPBz_Z-9NwB/view?usp=sharing"
+                >
+                  <div className="work__item"></div>
+                  <h1>
+                    Analysis
+                    <br /> and Design of
+                    <br /> Algorithm
+                  </h1>
+                  <img alt="ADA" src={ADAc} />
+                </a>
+              </div>
               <div className="work__img">
                 <a
                   target="_blank"
@@ -498,7 +514,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://kartikeypandey619.medium.com/fetching-showing-data-from-api-in-react-js-3faec2f61a0e"
-                className="button skills__text"
+                className="button skills__text btn-grad"
               >
                 Read
               </a>
@@ -537,7 +553,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://drive.google.com/file/d/1C2Gz1b0pSWQtBpNYNY3ImQeUDpC5nv3f/view?usp=sharing"
-                  className="button skills__text"
+                  className="button skills__text btn-grad"
                 >
                   Read
                 </a>
@@ -607,13 +623,27 @@ export default function Home() {
                 <img alt="yoga" src={yoga} />
               </a>
             </div>
+
+            <div className="work__img">
+              <a href="https://drive.google.com/file/d/1enrvIhpGI75wsJ6CWESkesuymv846zpa/view?usp=sharing">
+                <div className="work__item"></div>
+                <h1>
+                  Participant <br />
+                  Battle of Bands <br /> by IIT Bhilai
+                </h1>
+                <img alt="battle of bands" src={IITB} />
+              </a>
+            </div>
           </div>
           <div className="bd-grid">
             <div className="centered-text">
               <h1 className="sub-title">Hobbies</h1>
               <p className="skills__text">
-                My hobbies are programming and playing Piano. Here is my Youtube
-                Channel
+                Music has a different aura, that keeps me motivated. It relaxes
+                me and helps me in coming back to work with more positivity,
+                confidence and energy. For me, music is the cure to every
+                problem, it escalates the person to a whole different space.
+                Music is hence not just an hobby for me, its a complete emotion.
               </p>
             </div>
             <div className="centered-text">
@@ -654,7 +684,7 @@ export default function Home() {
               <input
                 type="button"
                 value="Contact"
-                className="contact__button button"
+                className="contact__button button btn-grad"
               />
             </form>
           </div>
